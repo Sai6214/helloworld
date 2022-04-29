@@ -1,23 +1,23 @@
 ﻿using System;
-namespace helloworld
+
+namespace uc1empstatus
 {
-    class program
+    internal class Program
     {
-        static void Main (String[] args)
+        static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-
-
+            int isPresent;
+            int isAbsent;
+            Random random = new Random();
+            int randomcheck = random.Next(2);
+            if(randomcheck == 1)
+            {
+                Console.WriteLine("the employee is present");           
+            }
+            else
+            {
+                Console.WriteLine("the employee is absent");
+            }
         }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public void printname()
-        {
-            Console.WriteLine("Hello, World!");
-        }
-
     }
-
 }
